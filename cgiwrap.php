@@ -2,7 +2,7 @@
 
 /* CONFIGURATION */
 $wrap_conf = array(
-    "/.*/" => "./test.py",
+    "/.*/" => "./ctest",
 );
 
 function error($msg)
