@@ -1,0 +1,10 @@
+#!/bin/sh
+
+while true; do
+    clear
+    top -b -n 1 | head -n 10
+    echo; echo; echo;
+    sensors | grep °C
+    sleep 5
+done
+

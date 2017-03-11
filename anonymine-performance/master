@@ -1,0 +1,40 @@
+#!/bin/sh
+
+get_temp ()
+{
+    sensors | grep Temperature | grep $1 | cut -d+ -f2 | cut -d. -f1
+}
+
+cool ()
+{
+    if [ "$(get_temp CPU)" -gt 65 ]; then
+        echo "CPU way too hot! Halting" >&2
+        pause
+    elif [ "$(get_temp CPU)" -gt 60 ]; then
+        echo "CPU too hot!" >&2
+        sleep 300
+    elif [ "$(get_temp CPU)" -gt 57 ]; then
+        echo "CPU hot!" >&2
+    fi
+    
+    if [ "$(get_temp MB)" -gt 55 ]; then
+        echo "MB way too hot! Halting" >&2
+        pause
+    elif [ "$(get_temp MB)" -gt 45 ]; then
+        echo "MB too hot!" >&2
+        sleep 300
+    elif [ "$(get_temp MB)" -gt 44 ]; then
+        echo "MB hot!" >&2
+    fi
+}
+
+main ()
+{
+    while true; do
+        python slave; cool
+        pypy slave; cool
+    done
+}
+
+main
+
