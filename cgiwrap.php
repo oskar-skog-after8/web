@@ -2,12 +2,56 @@
 
 /* CONFIGURATION */
 $wrap_conf = array(
-    "/.*/" => "./ctest",
+    array("~^/oskar/cgiwrap\\.php(\\?test.*)?$~", "./test2.py"),
+    array("~^.*\\?hello$~", "./ctest"),
 );
+$err_contact = "spam@example.com";
+
 
 function error($msg)
 {
-    echo "<pre>".htmlspecialchars($msg)."</pre>";
+    global $err_contact;
+    $msg = htmlspecialchars($msg);
+    http_response_code(500);
+    header("Content-Type: text/html");
+    echo <<<END
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <title>ERROR (cgiwrap.php)</title>
+        <meta name="robots" content="noindex"/>
+        <meta name="viewport" content="width=device-width"/>
+        <style type="text/css">
+            h2
+            {
+                margin-top: 3.1416em;
+            }
+            pre
+            {
+                word-wrap: break-word;
+                white-space: pre-wrap;
+            }
+            $media only screen and (max-width: 640px)
+            {
+                pre
+                {
+                    font-size: 80%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ERROR (cgiwrap.php)</h1>
+        <p>
+            Please send a link to this page to
+            <a href="mailto:$err_contact">$err_contact</a>.
+        </p>
+        <h2>Error message</h2>
+        <pre>$msg</pre>
+    </body>
+</html>
+END;
 }
 
 /*
@@ -74,15 +118,17 @@ function main()
 {
     $me = $_SERVER['REQUEST_URI'];
     global $wrap_conf;
-    foreach ($wrap_conf as $regex => $script)
+    foreach ($wrap_conf as $record)
     {
-        if (preg_match($regex, $me))
+        $pattern = $record[0];
+        $replacement = $record[1];
+        if (preg_match($pattern, $me))
         {
-            wrap($script);
+            wrap(preg_replace($pattern, $replacement, $me));
             return;
         }
     }
-    error("No match");
+    error("No regex matches: $me");
 }
 
 main();
