@@ -417,4 +417,60 @@ PyPy-30x30: 10.858435154
 PyPy-40x40: 175.041527987
 PyPy-50x50: 362.886070013
 PyPy-60x60: 1714.44061112
-PyPy-70x70: 
+PyPy-70x70: 1382.67901707
+CPython-20x20: 4.08286690712
+CPython-30x30: 5.48090815544
+CPython-40x40: 291.913815975
+CPython-50x50: 123.068176031
+CPython-60x60: 2829.81839204
+CPython-70x70: 1246.51631403
+PyPy-20x20: 2.83046293259
+PyPy-30x30: 65.1464340687
+PyPy-40x40: 15.0813379288
+PyPy-50x50: 24.509567976
+PyPy-60x60: 418.628726959
+PyPy-70x70: 596.16670084
+CPython-20x20: 15.0154061317
+CPython-30x30: 40.9848761559
+CPython-40x40: 40.6312830448
+CPython-50x50: 454.880155802
+CPython-60x60: 1658.27742505
+CPython-70x70: 1058.7167151
+PyPy-20x20: 6.05516886711
+PyPy-30x30: 28.3211610317
+PyPy-40x40: 218.780727863
+PyPy-50x50: 237.477469921
+PyPy-60x60: 123.478564024
+PyPy-70x70: 617.155750036
+CPython-20x20: 13.4616549015
+CPython-30x30: 6.50850892067
+CPython-40x40: 145.683796167
+CPython-50x50: 724.255886078
+CPython-60x60: 528.410052061
+CPython-70x70: Traceback (most recent call last):
+  File "slave", line 33, in <module>
+    main()
+  File "slave", line 24, in main
+    engine.init_field(start_point)
+  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 830, in init_field
+    self.init_field2(startpoint)
+  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 807, in init_field2
+    raise security_alert('Initialization took too long, aborted')
+anonymine_engine.security_alert: Initialization took too long, aborted
+PyPy-20x20: 3.18489408493
+PyPy-30x30: 14.4183299541
+PyPy-40x40: 27.8962728977
+PyPy-50x50: 29.6296410561
+PyPy-60x60: 2318.49375105
+PyPy-70x70: 99.8748939037
+CPython-20x20: 2.91449904442
+CPython-30x30: 149.050179005
+CPython-40x40: 35.7877600193
+CPython-50x50: 460.146569014
+CPython-60x60: 541.909580946
+CPython-70x70: 1920.41584992
+PyPy-20x20: 2.53339505196
+PyPy-30x30: 59.081223011
+PyPy-40x40: 77.7596769333
+PyPy-50x50: 26.5677978992
+PyPy-60x60: 
