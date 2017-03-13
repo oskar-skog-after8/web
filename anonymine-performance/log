@@ -473,4 +473,21 @@ PyPy-20x20: 2.53339505196
 PyPy-30x30: 59.081223011
 PyPy-40x40: 77.7596769333
 PyPy-50x50: 26.5677978992
-PyPy-60x60: 
+PyPy-60x60: 1113.63547802
+PyPy-70x70: Traceback (most recent call last):
+  File "app_main.py", line 75, in run_toplevel
+  File "slave", line 33, in <module>
+    main()
+  File "slave", line 24, in main
+    engine.init_field(start_point)
+  File "/usr/local/lib/pypy2.7/dist-packages/anonymine_engine.py", line 830, in init_field
+    self.init_field2(startpoint)
+  File "/usr/local/lib/pypy2.7/dist-packages/anonymine_engine.py", line 807, in init_field2
+    raise security_alert('Initialization took too long, aborted')
+security_alert: Initialization took too long, aborted
+CPython-20x20: 2.83074808121
+CPython-30x30: 5.56644797325
+CPython-40x40: 73.1811621189
+CPython-50x50: 196.002794981
+CPython-60x60: 1147.07709503
+CPython-70x70: 
