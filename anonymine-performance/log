@@ -577,3 +577,26 @@ PyPy-60x60: Traceback (most recent call last):
   File "/usr/local/lib/pypy2.7/dist-packages/anonymine_engine.py", line 774, in init_field2
     pid, status = os.wait()
 KeyboardInterrupt
+CPython-20x20: 8.59157299995
+CPython-30x30: 59.0150258541
+CPython-40x40: 185.444885015
+CPython-50x50: 39.3254060745
+CPython-60x60: 391.043013811
+CPython-70x70: 6645.33961391
+MB hot!
+PyPy-20x20: 2.10532689095
+PyPy-30x30: 76.007445097
+PyPy-40x40: 38.253798008
+PyPy-50x50: 501.710543871
+PyPy-60x60: 633.025151014
+PyPy-70x70: Traceback (most recent call last):
+  File "app_main.py", line 75, in run_toplevel
+  File "slave", line 33, in <module>
+    main()
+  File "slave", line 24, in main
+    engine.init_field(start_point)
+  File "/usr/local/lib/pypy2.7/dist-packages/anonymine_engine.py", line 830, in init_field
+    self.init_field2(startpoint)
+  File "/usr/local/lib/pypy2.7/dist-packages/anonymine_engine.py", line 774, in init_field2
+    pid, status = os.wait()
+KeyboardInterrupt
