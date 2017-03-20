@@ -490,4 +490,90 @@ CPython-30x30: 5.56644797325
 CPython-40x40: 73.1811621189
 CPython-50x50: 196.002794981
 CPython-60x60: 1147.07709503
-CPython-70x70: 
+CPython-70x70: CPython-20x20: Traceback (most recent call last):
+  File "slave", line 33, in <module>
+    main()
+  File "slave", line 24, in main
+    engine.init_field(start_point)
+  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 830, in init_field
+    self.init_field2(startpoint)
+  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 774, in init_field2
+    pid, status = os.wait()
+KeyboardInterrupt
+CPython-20x20: 3.33933901787
+CPython-30x30: 88.9367961884
+CPython-40x40: 125.919674158
+CPython-50x50: 104.363903999
+CPython-60x60: 1868.946594
+CPython-70x70: 649.152045965
+PyPy-20x20: 15.4886820316
+PyPy-30x30: 51.749835968
+PyPy-40x40: 106.610980988
+PyPy-50x50: 261.364666939
+PyPy-60x60: 1131.56241608
+PyPy-70x70: 196.725862026
+CPython-20x20: 1.70352911949
+CPython-30x30: 17.9816570282
+CPython-40x40: 47.9708499908
+CPython-50x50: 47.6031811237
+CPython-60x60: Traceback (most recent call last):
+  File "slave", line 33, in <module>
+    main()
+  File "slave", line 24, in main
+    engine.init_field(start_point)
+  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 830, in init_field
+    self.init_field2(startpoint)
+  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 807, in init_field2
+    raise security_alert('Initialization took too long, aborted')
+anonymine_engine.security_alert: Initialization took too long, aborted
+PyPy-20x20: 15.6915538311
+PyPy-30x30: 14.6142411232
+PyPy-40x40: 158.118991137
+PyPy-50x50: 149.237576962
+PyPy-60x60: 1835.03119612
+PyPy-70x70: 3474.11538005
+CPython-20x20: 7.51897001266
+CPython-30x30: 7.00432515144
+CPython-40x40: 22.1862418652
+CPython-50x50: 447.886796951
+CPython-60x60: 702.884343147
+CPython-70x70: 483.656096935
+PyPy-20x20: 6.95723199844
+PyPy-30x30: 56.4994359016
+PyPy-40x40: 12.7815730572
+PyPy-50x50: 335.001468182
+PyPy-60x60: 372.712869883
+PyPy-70x70: 1164.57960701
+CPython-20x20: 1.73125386238
+CPython-30x30: 20.756772995
+CPython-40x40: 41.732997179
+CPython-50x50: 477.32270503
+CPython-60x60: 519.901263952
+CPython-70x70: 6807.72385406
+PyPy-20x20: 14.8610501289
+PyPy-30x30: 94.8193490505
+PyPy-40x40: 100.432583809
+PyPy-50x50: 438.356481075
+PyPy-60x60: 752.79360795
+PyPy-70x70: 953.706485987
+CPython-20x20: 1.25879001617
+CPython-30x30: 5.14146614075
+CPython-40x40: 47.2009520531
+CPython-50x50: 168.647857904
+CPython-60x60: 448.16031003
+CPython-70x70: 5786.62834382
+PyPy-20x20: 2.16880011559
+PyPy-30x30: 5.79789400101
+PyPy-40x40: 187.211266994
+PyPy-50x50: 104.542401075
+PyPy-60x60: Traceback (most recent call last):
+  File "app_main.py", line 75, in run_toplevel
+  File "slave", line 33, in <module>
+    main()
+  File "slave", line 24, in main
+    engine.init_field(start_point)
+  File "/usr/local/lib/pypy2.7/dist-packages/anonymine_engine.py", line 830, in init_field
+    self.init_field2(startpoint)
+  File "/usr/local/lib/pypy2.7/dist-packages/anonymine_engine.py", line 774, in init_field2
+    pid, status = os.wait()
+KeyboardInterrupt
