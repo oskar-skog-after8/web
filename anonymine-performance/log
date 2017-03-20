@@ -645,4 +645,18 @@ PyPy-30x30: 44.6499810219
 PyPy-40x40: 74.7312428951
 PyPy-50x50: 333.108696938
 PyPy-60x60: 197.915028095
-PyPy-70x70: 
+PyPy-70x70: 1266.44363999
+CPython-20x20: 64.8453581333
+CPython-30x30: 18.7504320145
+CPython-40x40: 16.2906301022
+CPython-50x50: 787.006447077
+CPython-60x60: Traceback (most recent call last):
+  File "slave", line 33, in <module>
+    main()
+  File "slave", line 24, in main
+    engine.init_field(start_point)
+  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 830, in init_field
+    self.init_field2(startpoint)
+  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 774, in init_field2
+    pid, status = os.wait()
+KeyboardInterrupt
