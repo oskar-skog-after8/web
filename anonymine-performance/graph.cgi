@@ -5,24 +5,20 @@ import sys
 import subprocess
 
 
-filename = os.getenv('QUERY_STRING')
-assert not '/' in filename
-assert not '.' in filename
-
 os.chdir('/var/www/html/oskar/anonymine-performance')
-body1 = subprocess.check_output(['./analyze.py', filename]).decode('ascii')
-body2 = subprocess.check_output(
-    ['./analyze.py', filename], env={'LINES': '400', 'COLUMNS': '1000'}
-).decode('ascii')
+
+query = os.getenv('QUERY_STRING', 'attempt-time-80@20x20')
+assert not '/' in query
+assert not '.' in query
 
 sys.stdout.write('''Content-Type: text/html; charset=UTF-8
 
 <!DOCTYPE html>
 <html xlmns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>'''+filename+'''</title>
+        <title>Graphs</title>
         <style>
-            #body2
+            .body2
             {
                 font-size: 2px;
                 font-weight: bold;
@@ -34,10 +30,20 @@ sys.stdout.write('''Content-Type: text/html; charset=UTF-8
         </style>
     </head>
     <body>
-        <h1>'''+filename+'''</h1>
-        <pre id="body1">'''+body1+'''</pre>
-        <pre id="body2">'''+body2+'''</pre>
-    </body>
+        <h1>Graphs</h1>
+''')
+
+for filename in query.split(','):
+    body1 = subprocess.check_output(['./analyze.py', filename]).decode('ascii')
+    body2 = subprocess.check_output(
+        ['./analyze.py', filename], env={'LINES': '400', 'COLUMNS': '1000'}
+    ).decode('ascii')
+    sys.stdout.write('''        <h2>'''+filename+'''</h2>
+        <pre class="body1">'''+body1+'''</pre>
+        <pre class="body2">'''+body2+'''</pre>
+''')
+
+sys.stdout.write(''' </body>
 </html>
 ''')
 

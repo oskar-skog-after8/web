@@ -23,8 +23,8 @@ def profile_solver(x, y, m):
     solver = anonymine_solver.solver()
     solver.field = field
     start = time.time()
-    solver.solve()
-    return time.time() - start
+    result = solver.solve()
+    return result[0], result[1]['T']
 
 
 def stats(data):
@@ -64,24 +64,32 @@ def stats(data):
     )
 
 def main(x, y, m):
-    filename = 'attempt-time-{}@{}x{}'.format(m, x, y)
+    filenames = {
+        'all': 'attempt-time-{}@{}x{}'.format(m, x, y),
+        True: 'attempt-time-{}@{}x{}-success'.format(m, x, y),
+        False: 'attempt-time-{}@{}x{}-failure'.format(m, x, y),
+    }
     try:
+        filename = filenames['all']
         data = list(map(float, open(filename).read().strip('\n').split('\n')))
     except IOError:
         data = []
     
-    log = open(filename, 'a')
+    logs = {key: open(filenames[key], 'a') for key in filenames}
     try:
         while True:
-            new_time = profile_solver(x, y, m)
-            log.write('{}\n'.format(new_time))
-            log.flush()
+            success, new_time = profile_solver(x, y, m)
+            for log in (logs['all'], logs[success]):
+                log.write('{}\n'.format(new_time))
+                log.flush()
+                
             data.append(new_time)
             data.sort()
             stats(data)
     except KeyboardInterrupt:
         pass
-    log.close()
+    for key in logs:
+        logs[key].close()
 
 
 if __name__ == '__main__':
