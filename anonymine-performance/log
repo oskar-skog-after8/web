@@ -600,3 +600,40 @@ PyPy-70x70: Traceback (most recent call last):
   File "/usr/local/lib/pypy2.7/dist-packages/anonymine_engine.py", line 774, in init_field2
     pid, status = os.wait()
 KeyboardInterrupt
+CPython-20x20: 1.2262570858
+CPython-30x30: 40.8205778599
+CPython-40x40: 71.2023921013
+CPython-50x50: 324.616943121
+CPython-60x60: 364.359053135
+CPython-70x70: Traceback (most recent call last):
+  File "slave", line 33, in <module>
+    main()
+  File "slave", line 24, in main
+    engine.init_field(start_point)
+  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 830, in init_field
+    self.init_field2(startpoint)
+  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 807, in init_field2
+    raise security_alert('Initialization took too long, aborted')
+anonymine_engine.security_alert: Initialization took too long, aborted
+MB hot!
+PyPy-20x20: 3.62393808365
+PyPy-30x30: 62.1143119335
+PyPy-40x40: 64.6051130295
+PyPy-50x50: 105.434080124
+PyPy-60x60: 52.9140360355
+PyPy-70x70: 4401.25650191
+CPython-20x20: 12.876983881
+CPython-30x30: 5.35329008102
+CPython-40x40: 19.5236179829
+CPython-50x50: 102.683295965
+CPython-60x60: 1160.36402202
+CPython-70x70: 502.747235775
+PyPy-20x20: 21.7825911045
+PyPy-30x30: 72.1789700985
+PyPy-40x40: 51.04428792
+PyPy-50x50: 284.514070034
+PyPy-60x60: 339.705575943
+PyPy-70x70: 1316.18143082
+CPython-20x20: 59.5165848732
+CPython-30x30: 5.14492702484
+CPython-40x40: 
