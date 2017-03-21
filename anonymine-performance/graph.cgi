@@ -5,7 +5,7 @@ import sys
 import subprocess
 
 
-os.chdir('/home/guest/anonymine-performance')
+os.chdir('/var/www/html/oskar/anonymine-performance')
 
 query = os.getenv('QUERY_STRING', 'attempt-time-80@20x20')
 assert not '/' in query
