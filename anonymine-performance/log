@@ -1,34 +1,3 @@
-3 timeouts CPython-70x70 added as values > 7200
+4 timeouts CPython-70x70 added as values > 7200
 1 timeout CPython-60x60 added as value > 7200
 1 timeout PyPy-70x70 added as value > 7200
-CPython-20x20: 9.93332219124
-CPython-30x30: 49.2766218185
-CPython-40x40: 46.3678309917
-CPython-50x50: 121.539401054
-CPython-60x60: 3004.8970921
-CPython-70x70: Traceback (most recent call last):
-  File "slave", line 33, in <module>
-    main()
-  File "slave", line 24, in main
-    engine.init_field(start_point)
-  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 830, in init_field
-    self.init_field2(startpoint)
-  File "/usr/local/lib/python2.7/dist-packages/anonymine_engine.py", line 807, in init_field2
-    raise security_alert('Initialization took too long, aborted')
-anonymine_engine.security_alert: Initialization took too long, aborted
-PyPy-20x20: 11.1176350117
-PyPy-30x30: 30.6250460148
-PyPy-40x40: 298.583604813
-PyPy-50x50: 349.178437948
-PyPy-60x60: 206.077574968
-PyPy-70x70: Traceback (most recent call last):
-  File "app_main.py", line 75, in run_toplevel
-  File "slave", line 33, in <module>
-    main()
-  File "slave", line 24, in main
-    engine.init_field(start_point)
-  File "/usr/local/lib/pypy2.7/dist-packages/anonymine_engine.py", line 830, in init_field
-    self.init_field2(startpoint)
-  File "/usr/local/lib/pypy2.7/dist-packages/anonymine_engine.py", line 774, in init_field2
-    pid, status = os.wait()
-KeyboardInterrupt
