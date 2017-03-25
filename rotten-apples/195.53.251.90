@@ -1,0 +1,14 @@
+% Abuse contact for '195.53.251.0 - 195.53.251.255' is 'nemesys@telefonica.es'
+abuse-mailbox:  nemesys@telefonica.es
+abuse-mailbox:  nemesys@telefonica.es
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[25/Mar/2017:04:14:06 +0200] 195.53.251.90 301 "GET / HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:04:14:07 +0200] 195.53.251.90 301 "GET /portal/client/cms/viewcmspage.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:04:14:07 +0200] 195.53.251.90 301 "GET /admin/agent/default.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:04:14:07 +0200] 195.53.251.90 301 "GET /vportal/web/gateway/home.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:04:14:07 +0200] 195.53.251.90 301 "GET /struts2_2.3.15.1-showcase/showcase.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:04:14:07 +0200] 195.53.251.90 301 "GET /struts2-showcase/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:04:14:07 +0200] 195.53.251.90 301 "GET /struts/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:04:14:07 +0200] 195.53.251.90 301 "GET /struts2/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:04:14:08 +0200] 195.53.251.90 301 "GET /web/Index.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

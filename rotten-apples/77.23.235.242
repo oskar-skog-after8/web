@@ -1,0 +1,6 @@
+% Abuse contact for '77.22.0.0 - 77.23.255.255' is 'abuse@kabeldeutschland.de'
+abuse-mailbox:  abuse@kabeldeutschland.de
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[25/Mar/2017:18:26:26 +0200] 77.23.235.242 301 "GET /notFound.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:18:26:27 +0200] 77.23.235.242 301 "GET /login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

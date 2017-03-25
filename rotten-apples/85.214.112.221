@@ -1,0 +1,11 @@
+% Abuse contact for '85.214.16.0 - 85.214.139.255' is 'abuse@strato.de'
+remarks:        * Please send abuse complaints to abuse-server@strato.de   *
+abuse-c:        SRAC-RIPE
+abuse-mailbox:  abuse@strato.de
+role:           RIPE contact Dedicated Server
+abuse-mailbox:  abuse-server@strato.de
+remarks:        * Please send abuse complaints to abuse-server@strato.de   *
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[24/Mar/2017:01:05:39 +0200] 85.214.112.221 301 "GET /notFound.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[24/Mar/2017:01:05:39 +0200] 85.214.112.221 301 "GET /login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

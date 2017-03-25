@@ -1,0 +1,11 @@
+OrgAbuseEmail:  abuse@ripe.net
+% No abuse contact registered for 144.76.0.0 - 144.76.255.255
+abuse-mailbox:  abuse@hetzner.de
+remarks:        * For spam/abuse/security issues please contact *
+remarks:        * abuse@hetzner.de, not this address. *
+remarks:        * The contents of your abuse email will be *
+abuse-c:        HOAC1-RIPE
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[23/Mar/2017:20:22:09 +0200] 144.76.136.75 301 "GET /frame/first.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[23/Mar/2017:20:22:09 +0200] 144.76.136.75 301 "GET /struts2-showcase/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

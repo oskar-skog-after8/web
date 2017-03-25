@@ -1,0 +1,16 @@
+Comment:        All abuse reports MUST include:
+Comment:        * Your contact details (phone and email) Without these we will be unable to identify the correct owner of the IP address at that point in time.
+OrgNOCEmail:  amzn-noc-contact@amazon.com
+OrgAbuseEmail:  abuse@amazonaws.com
+OrgTechEmail:  amzn-noc-contact@amazon.com
+OrgAbuseEmail:  abuse@amazonaws.com
+OrgNOCEmail:  amzn-noc-contact@amazon.com
+OrgTechEmail:  amzn-noc-contact@amazon.com
+OrgAbuseEmail:  abuse@amazonaws.com
+OrgTechEmail:  amzn-noc-contact@amazon.com
+OrgNOCEmail:  amzn-noc-contact@amazon.com
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[25/Mar/2017:16:35:56 +0200] 54.79.32.164 301 "GET /struts2-core-2.3.8/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:16:35:57 +0200] 54.79.32.164 301 "GET /struts-2.5.10.1-src/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[25/Mar/2017:16:35:58 +0200] 54.79.32.164 301 "GET /struts-2.3.20.1/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

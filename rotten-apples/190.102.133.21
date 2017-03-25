@@ -1,0 +1,5 @@
+abuse-c:     JOI
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[23/Mar/2017:15:50:33 +0200] 190.102.133.21 301 "GET /frame/first.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[23/Mar/2017:15:50:34 +0200] 190.102.133.21 301 "GET /struts2-showcase/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

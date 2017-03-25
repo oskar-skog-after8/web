@@ -1,0 +1,7 @@
+OrgAbuseEmail:  abuse@ripe.net
+% Abuse contact for '155.133.82.0 - 155.133.82.255' is 'artur@siubidubi.net'
+abuse-c:        AGFS2-RIPE
+abuse-mailbox:  artur@siubidubi.net
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[23/Mar/2017:07:42:28 +0200] 155.133.82.12 301 "GET /Struts2XMLHelloWorld/User/home.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

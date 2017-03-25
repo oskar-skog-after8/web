@@ -1,0 +1,10 @@
+abuse-c:     BEORN2
+% Security and mail abuse issues should also be addressed to
+% and mail-abuse@cert.br
+% provider, contact handle (ID), CIDR block, IP and ASN.
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[24/Mar/2017:06:52:55 +0200] 191.235.92.24 301 "GET /notFound.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[24/Mar/2017:06:52:55 +0200] 191.235.92.24 301 "GET /login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[24/Mar/2017:07:35:06 +0200] 191.235.92.24 301 "GET /notFound.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[24/Mar/2017:07:35:07 +0200] 191.235.92.24 301 "GET /login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

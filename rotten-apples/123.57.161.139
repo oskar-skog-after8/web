@@ -1,0 +1,7 @@
+abuse-mailbox:  ipas@cnnic.cn
+remarks:        empowered to investigate complaints of network abuse.
+remarks:        Please contact the tech-c or admin-c of the network.
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[24/Mar/2017:11:11:04 +0200] 123.57.161.139 301 "GET /frame/first.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[24/Mar/2017:11:11:05 +0200] 123.57.161.139 301 "GET /struts2-showcase/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

@@ -1,0 +1,7 @@
+% Abuse contact for '93.170.216.0 - 93.170.219.255' is 'info@skyparkcdn.ru'
+abuse-c:        AA27782-RIPE
+abuse-mailbox:  info@skyparkcdn.ru
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[23/Mar/2017:23:05:12 +0200] 93.170.216.163 301 "GET /frame/first.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[23/Mar/2017:23:05:12 +0200] 93.170.216.163 301 "GET /struts2-showcase/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

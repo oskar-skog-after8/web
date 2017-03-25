@@ -1,0 +1,11 @@
+% Abuse contact for '80.91.172.200 - 80.91.172.207' is 'abuse@ip.datagroup.ua'
+remarks:        Please send abuse notification to noc@zoral.com.ua
+abuse-mailbox:  abuse@ip.datagroup.ua
+remarks:        in case of abuse please contact:        abuse@ip.datagroup.ua
+remarks:        for operational issues please contact:  noc@ip.datagroup.ua
+
+Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
+[23/Mar/2017:23:44:27 +0200] 80.91.172.202 301 "GET /notFound.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[23/Mar/2017:23:44:27 +0200] 80.91.172.202 301 "GET /login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[24/Mar/2017:00:25:33 +0200] 80.91.172.202 301 "GET /notFound.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
+[24/Mar/2017:00:25:33 +0200] 80.91.172.202 301 "GET /login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
