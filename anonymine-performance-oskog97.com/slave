@@ -1,0 +1,33 @@
+import anonymine_engine
+
+import platform
+import sys
+import time
+
+
+def main():
+    cfg = './enginecfg'
+    for size in [50, 50, 50]:         # 10, 20, 25, 30, 35, 40, 50, 60, 70
+        start_point = (size//2, size//2)
+        mines = int(.20 * size**2)
+        
+        filename = '{0}-{1}x{1}'.format(platform.python_implementation(), size)
+        sys.stderr.write('{}: '.format(filename))
+        sys.stderr.flush()
+        
+        engine = anonymine_engine.game_engine(cfg, **{
+            'width': size,
+            'height': size,
+            'mines': mines
+        })
+        start = time.time()
+        engine.init_field(start_point)
+        stop = time.time()
+        
+        f = open(filename, 'a')
+        f.write('{}\n'.format(stop - start))
+        f.close()
+        sys.stderr.write('{}\n'.format(stop - start))
+
+
+main()
