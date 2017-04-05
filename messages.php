@@ -8,7 +8,20 @@
         </style>
 
 <?php
+
 /*
+This is just an experiment:
+    - No authentication
+    - No protection against any form of DoS
+    - The unique identifier is chosen for convenience, not uniqueness
+Apart from that, there shouldn't be any vulnerabilities:
+    - No SQL injection
+    - Uniqueness of the unique key is enforced. You can't post a message
+      with a subject line that's in the database.
+*/
+
+/*
+To create the table:
 CREATE TABLE messages (subject VARCHAR(200) CHARACTER SET utf8 UNIQUE, message TEXT CHARACTER SET utf8, hidden ENUM('true', 'false'));
 */
 
