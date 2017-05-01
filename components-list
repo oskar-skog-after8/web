@@ -1,0 +1,302 @@
+Inductors and such
+==================    
+    1 * thick wire coil
+    6 * blob inductor (4 blue, 2 yellow)
+    2 * MW coil, ferrite missing
+    2 * ferrite toroid coil
+    4 * springs (variable inductors with high ESR and no leads)
+    1 * slightly broken radial inductor
+    2 * black axial inductors (possibly for audio applications)
+    2 * brown axial inductors
+    1 * thick wire in ferrite bead
+    
+    Transformers
+    ============
+        2 * mains->low linear supply transformers (2 windings, 4 wires)
+        1 * 230V->11V linear supply transformer (2 windings, 4 wires)
+        0 * transformer "LION8942" (2 windings, 5 wires)
+        1 * small SMPS transformer (3 windings, 6 wires)
+        1 * tunable RF transformer (2 windings, 5 wires)
+        1 * 8 pin DI transformer (8 wires)
+        1 * homemade 1:3...1:5 ferrite bead transformer (2 windings, 4 wires)
+
+
+Diodes
+======
+    
+    Beefy rectifiers
+    ================
+        1 * big ass diode 70HFR120 - 70A (average at 140°C), 1200V (repetitive peak)
+        1 * ERC81-74 -- Schottky -- 40V 3A, fwd<=0.55V
+        1 * RU4Z -- Very beefy
+        4 * 1N5401 -- Very beefy
+        1 * FE3C 150V 3A
+        1 * ARGP10D
+        1 * K1648
+        1 * 1N5391
+        1 * 1N4004
+        1 * 1N4002, unreadable
+        1 * 1N400x, unreadable
+        1 * (BYD)?33J
+        3 * BYV26 - surge protection? - BYV26C, BYV26E, unclear
+        1 * 18Y, may be Zener
+    
+    Multi-diode rectifiers
+    ======================
+        1 * RUR-D820 -- common cathode double rectifier
+        1 * FCH10A10 -- common cathode double recitfier
+        1 * TD5-H -- bridge rectifier
+        1 * KBP206 -- bridge rectifier
+        1 * DF085 340 -- bridge rectifier
+
+    Zeners
+    ======    
+        1 * BZX79C -- 8.2V 500mW Zener, on verified Zeners strip
+        4 * (1 with short leads), (BVZ55-)B5V1, probably 5.1 V Zener, on verified Zeners strip
+        1 * BZX99C 6.8V, on verified Zeners strip
+        1 * C33 -- 33V 1W, on verified Zeners strip
+        3 * 55C18 -- 18V, on verified Zeners strip
+    
+    Small signal diodes
+    ===================
+        5 * AA117 GERMANIUM diode
+        9 * color coded, probably small signal silicon diode
+        11 * 1N4148 (2 possibly broken)
+        7 * 1N4150 (1 may be a 1N4160 Zener) (1 with unreadable marking)
+        1 * T1418, probably 1N4148
+        6 * unreadable, probably small signal silicon diode
+
+    LEDs
+    ====
+        1 * small yellow/orange LED
+        1 * small weird green LED
+        1 * (short leads) small red LED
+        1 * LED (transparent, unknown color, may be dead, wires soldered)
+    
+    Optical, except LEDs
+    ====================
+        7 * LED or photodiode (working in pairs) - squares with dots - 4 transparent, 3 red
+        1 * unknown K73 Y 41, possibly opto-coupler
+        1 * opto-coupler with A, K, C and E marked
+    
+    Varicap
+    =======
+        1 * SVC321SPA (I321) varactor pinout=CA breakdown=16V ~25...450pF
+        1 * Former BF245A, missing source pin
+
+
+Capacitors
+==========
+
+    Misc
+    ====
+        2 * Variable; six pin quad capacitors with trimmers. pins: C1,C12,C2,C3,C34,C4
+        2 * trimmer
+        1 * crunched and unlabeled electrolytic capacitor, a.k.a. bomb
+        1 * blue box cap, 33nF or 330nF ?
+        1 * unreadable blue
+        2 * unreadable ceramic
+        1 * unreadable tantalum electrolytic? (polarized)
+        1 * 0.05 pF ceramic ??
+        1 * 3.3 pF film (brown package) ??
+        1 * big blue capacitor (250 VAC??)
+        1 * blue disc (possibly a Yn cap)
+    
+    POTENTIAL safety caps
+    =====================
+        1 * X2 cap
+        1 * yellow disc Y1 cap
+        1 * 68 nF, 275 VAC, used as X, (labeled in the box)
+        1 * blue disc, ? F, 250 VAC, used as Y, (labeled in the box)
+    
+    Ceramic
+    =======
+        15 pF       1
+        100 pF      1
+        470 pF      1
+        10 nF       4
+        22 nF       2
+        47 nF       2
+    
+    Other non-electrolytic, excluding safety caps
+    =============================================
+        680 pF      1   axial
+        1 nF        2   blue package; brown package
+        4.7 nF      1   film, brown package
+        10 nF       8   5 small red box; 1 brown package
+        12 nF       1   brown package
+        39 nF       1   brown package
+        68 nF       1   brown package
+        100 nF      2   2 orange packages 400 V
+        150 nF      1   brown package
+        330 nF      2   2 orange packages 250 VAC
+        2.0 µF      1   big ass 250 VAC capacitor
+
+    Wet aluminium electrolytics
+    ===========================
+                  tot  10V  16V  25V  35V  50V  63V  100V   400V    notes
+        470 nF      6                        6
+        1 µF        8                        7    1
+        2.2 µF      1                                   1
+        3.3 µF      1              1                                Short leads
+        4.7 µF     14              3         8    2     1
+        8 µF        2                   2                           Old, axial, no polarity markings
+        10 µF      12                        8          1      3
+        22 µF       1         1
+        33 µF       1                             1
+        47 µF      21    4    7    3                    1
+        100 µF      6    2    3    1                                One 16V has short leads
+        220 µF      4    4
+        330 µF      1              1
+        470 µF      2    2
+        680 µF      1         1
+        1 mF        1    1
+
+
+Voltage regulators
+==================
+
+    +x      0
+    -x      1   LM320
+    +5V     1   NTE960 (612479)
+    +3.3V   0
+    -5V     1   7905
+    -24V    1   MC79L24
+    
+
+Transistors
+===========
+    Type is one of NPN, PNP, JFET-N, JFET-P, MOSFET-N, MOSFET-P, MOSFET-N-dep, MOSFET-P-dep
+    
+    count   code        type        application             gain params                 pinout
+    1       BF423       PNP         High voltage                                        BCE
+    1       BD710       PNP         Power switching
+    1       2SD2227S    NPN         Power switching         hFE=820...2700              ECB
+    1       2SD965      NPN         Low U, high I
+    1       2N3904      NPN         Low load switching      high gain, low sat-voltage  CBE
+    3-1     2N3906      PNP         General purpose                                     EBC
+    1       BC182A      NPN                                 hFE=120...220               CBE
+    1       BC546A      NPN         General purpose         hFE=110...220               CBE
+    2-1     BC547C      NPN         General purpose         hFE=420...800               CBE
+    2-1     BC548       NPN         General purpose                                     CBE
+    1       BC556B      PNP         General purpose                                     CBE
+    1       BC639       NPN         Audio                                               ECB
+    1       (2S)C1815GR NPN         Audio                   hFE=200...400               ECB
+    4       (2S)C1815Y  NPN         Audio                   hFE=120...240               ECB
+    1       A1237Y      PNP                                 hFE=160...320               EBC
+    1       C1684       NPN         General purpose                                     ECB
+    
+
+
+Switches
+========
+
+    2 * keyboard switch
+    1 * push to close switch
+
+
+Fuses
+=====
+
+    1   holder for cylindrical fuses
+        
+    1   10A 32V         automotive
+    1   6A 250VAC       long cylindrical
+    1   3A 250VAC       cylindrical
+    1   2.5A 250VAC     cylindrical
+    2   2A(L) 250VAC    cylindrical
+    2   1.25A(L) 250VAC cylindrical
+    1   1.25A 250VAC    cylindrical
+    1   0.8A 250VAC     cylindrical; in holder
+    1   0.5A 250VAC     unusual, solderable, in holder?
+    1   0.4A 250VAC     cylindrical
+    1   0.25A 250VAC    cylindrical
+
+
+Speakers
+========
+
+    1 * small speaker or microphone
+    1 * headset speaker (1 as in mono)
+    1 * telephone speaker or microphone
+
+
+Audio amplifiers
+================
+
+    1 * LM386N-1
+    1 * BA5410 -- stereo amp
+
+
+Boring resistors
+================
+
+    1 * resistor attached to heatsink (tempearture sensing)
+    1 * ~1 W resistor
+    2 * ~0.5 W resistor
+    3 * really boring resistor
+    1 * broken blue potentiometer
+
+
+Misc
+====
+
+    3 * EPROM (all different)
+    1 * 455 kHz resonator
+    1 * solar cell (calculator)
+    1 * CD4053B -- CMOS 8-channel analog/digital multiplexer
+    1 * SN74LS04N -- TTL hex inverter
+    1 * LCD display
+    4 * ferrite core fragments from LION8942
+    
+    Less fascinating
+    ================
+        1 * Phone destroyer
+        1 * 100MHz-band antenna
+        1 * wire with unkown single-pin connector
+
+
+Connectors & Plugs
+==================
+
+    Type                Plugs   Sockets     notes
+    
+    Europlug            1       N/A
+    3.5 mm audio        2       0           1 has a mono cable attached (scheduled for usage)
+    IEC60320 C7-C8      1       3
+    "Polarized C8"      0       1
+    2 pin (internal)    1       1           attached
+    unknown (2 wires)   1       1           attached
+    unknown (2 wires)   1       0
+    unknown (3=4 wires) 1       1           attached, looks like 3.5 mm plugs and jacks but is way too small
+    unknown             1       1           attached, looks like 3.5 mm plugs, but doesn't fit
+    DC jack             0       3
+    6-pin JST           1       0           4/6 wires kept, 2 more can be soldered to a copule of short stumps
+
+
+Unknown
+=======
+
+    1 * Unknown Apple IC, probably ROM
+    3 * trim(cap or pot) ?? (2 white, 1 brown) (two leads)
+    1 * weird 4 leads thing (magnetic head?)
+    1 * 2 leads, white with black/gray stripe on top, "n10"
+    1 * axial, yellow, JK4 9005
+    3 * Mystery (transistor package): "R1004 446", "R2002 448", "R1001 437"
+    2 * NL841 - Might be power MOSFETs
+    1 * transistor package, unreadable markings
+    2 * transparent IC with a hole over the die (one of them is on a PCB)
+    1 * looks like an electrolytic capacitor
+    1 * Mystery 3-leaded with window, SP020J96A, optical thing?
+    1 * black IR thingy with three leads, probably LED and photodiode with common terminal
+
+
+Potentiometers
+==============
+
+    1 * potentiometer 50KW  -- group 1
+    1 * potentiometer 50KAX2 -- group 1
+    1 * stereo potentiometer 20KBX2 -- group 1
+    1 * funny 20 kOhm potentiometer
+    
+    
