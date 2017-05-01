@@ -1,0 +1,10 @@
+This audio amplifier is made from electronic waste and a 3D printer.
+It's associated speaker is made from a broken harddrive.
+
+Notice that this amp uses a USB connector for the speaker.
+Needless to say, bad things will happen if you think it's an actual USB device.
+(It's the power pins that are used for connecting the speaker.)
+
+There is also a dummy cable for directly connecting the speaker to a line
+output.  NOTE: The speaker has too low impedance to do this, you might damage
+the output!
