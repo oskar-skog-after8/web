@@ -1,0 +1,15 @@
+Input audio is line level, ie 1 V RMS.
+Supply voltage is 12 V.
+Maximum output is about 3 V RMS.
+
+Gain can be increased for weak signals.
+
+
+Adjusting the trimpots will change the voltage between test points.
+
+                pot     test points value
+first bias      R2      TP3 - TP1   ~1.4 V for full amplitude.
+gain            R5      TP2 - TP4   Vdd - gain*(TP3-TP1)
+                                    7.8 V for full amplitude and 12 V supply.
+second bias     R6      TP5 - TP1   gain*(TP3-TP1)
+                                    4.2 V for full amplitude
