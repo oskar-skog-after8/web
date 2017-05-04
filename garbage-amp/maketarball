@@ -2,18 +2,18 @@
 
 mkdir garbage-amp
 mkdir garbage-amp/pieces
-mkdir garbage-amp/photos
 
 cp README tuning schematic.png components-list garbage-amp
 cp pcb.blend front.blend back.blend battery-holder.blend battery-door.blend \
     left.blend right.blend top.blend garbage-amp/pieces
+cp combined/combined.blend garbage-amp/pieces-assembled.blend
 
 # TODO: Add photos
 
 tar -cf garbage-amp.tar garbage-amp
 gzip -9 garbage-amp.tar
 
-HEAD https://web.archive.org/save/https://oskog97.com/archive/garbage-amp.tar.gz
+GET https://web.archive.org/save/https://oskog97.com/archive/garbage-amp.tar.gz >/dev/null
 cat garbage-amp.tar.gz >/var/www/archive/garbage-amp.tar.gz
 rm -r garbage-amp
 rm garbage-amp.tar.gz
