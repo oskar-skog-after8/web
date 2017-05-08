@@ -13,7 +13,6 @@ cp combined/combined.blend garbage-amp/pieces-assembled.blend
 tar -cf garbage-amp.tar garbage-amp
 gzip -9 garbage-amp.tar
 
-GET https://web.archive.org/save/https://oskog97.com/archive/garbage-amp.tar.gz >/dev/null
 cat garbage-amp.tar.gz >/var/www/archive/garbage-amp.tar.gz
 rm -r garbage-amp
 rm garbage-amp.tar.gz
