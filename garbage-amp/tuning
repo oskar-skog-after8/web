@@ -7,6 +7,10 @@ Gain can be increased for weak signals.
 
 Adjusting the trimpots will change the voltage between test points.
 
+
+NOTICE:  You should short R7 while calibrating R6.
+
+
                 pot     test points value
 first bias      R2      TP3 - TP1   ~1.4 V for full amplitude.
 gain            R5      TP2 - TP4   Vdd - gain*(TP3-TP1)

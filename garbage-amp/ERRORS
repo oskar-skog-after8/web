@@ -1,0 +1,18 @@
+Pinout for voltage regulator is wrong.  I thought it was the same as for a 78xx,
+but oops.
+
+Voltage regulator (7912) broken, replacement needs to be installed.
+Will not work with batteries until fixed.  Note the incorrect pinout on the
+PCB, bend wires to compensate.
+
+R3 (100 kOhm trimpot) failed open.  As a quick fix, it has been shorted.
+Input impedance is much lower than wanted.
+
+A shortsight with the selection of R7 and C2 causes the amplifier to take a
+very long time to stabilize.  Be patient or short R7 if the amplifier has been
+turned off for a long time.
+
+Voltage good indicator for batteries not working.  Possible reasons:
+    - Fried zeners
+    - Zeners too non-ideal
+    - Voltage drop on LED higher than expected

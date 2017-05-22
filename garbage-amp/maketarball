@@ -3,7 +3,7 @@
 mkdir garbage-amp
 mkdir garbage-amp/pieces
 
-cp README tuning schematic.png components-list garbage-amp
+cp ERRORS README tuning schematic.png components-list garbage-amp
 cp pcb.blend front.blend back.blend battery-holder.blend battery-door.blend \
     left.blend right.blend top.blend garbage-amp/pieces
 cp combined/combined.blend garbage-amp/pieces-assembled.blend
