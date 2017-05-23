@@ -3,9 +3,10 @@
 mkdir garbage-amp
 mkdir garbage-amp/pieces
 
-cp ERRORS README tuning schematic.png components-list garbage-amp
+cp SPEAKER-MAINTENANCE ERRORS README tuning schematic.png components-list \
+    garbage-amp
 cp pcb.blend front.blend back.blend battery-holder.blend battery-door.blend \
-    left.blend right.blend top.blend garbage-amp/pieces
+    left.blend right.blend top.blend top.printfix.blend garbage-amp/pieces
 cp combined/combined.blend garbage-amp/pieces-assembled.blend
 
 # TODO: Add photos
