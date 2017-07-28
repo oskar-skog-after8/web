@@ -1,0 +1,87 @@
+#!/bin/sh
+
+### CONFIGURATION ###
+
+logfile=/var/log/messages
+
+# Time before checking if there is more in the log file
+read_sleep=10
+
+# Let some users fail to authenticate
+whitelist="anonymine"
+
+# Ban immediately
+blacklist="root"
+
+# Need to keep an eye on failed login attempts on these:
+flag="oskar monitor sshproxy"
+
+# Where to report: this + "/" + "bad-bot"|"ban-now"|"attention" + "/" + IP
+report_base=https://oskog97.com/sshin
+
+# Limit the request rate to the webserver. (Sleep n seconds)
+ban_sleep=1
+
+
+
+ban ()
+{
+    # External: report_base, ban_sleep
+    
+    echo $1 $2 >/dev/stderr
+    curl -I  $report_base/$1/$2 >/dev/null 2>/dev/null
+    sleep $ban_sleep
+}
+
+process ()
+{
+    # External userlists: $whitelist, $blacklist and $flag
+    
+    # IP is last
+    for x in $1; do IP=$x; done
+    for word in $1; do
+        for user in $whitelist; do
+            if [ $word = $user ]; then return; fi
+        done
+        for user in $blacklist; do
+            if [ $word = $user ]; then
+                ban ban-now $IP; return
+            fi
+        done
+        for user in $flag; do
+            if [ $word = $user ]; then
+                ban attention $IP; return
+            fi
+        done
+    done
+    ban bad-bot $IP
+}
+
+scan ()
+{
+    # Filter out only the interesting parts of the interesting lines:
+    grep -E '^[A-Z][a-z][a-z] [0-9 ][0-9] [0-9:]+ '"$(hostname)"' sshd\[[0-9]+\]: error: PAM: authentication error for' \
+        | cut -dr -f8- | cut -c2- \
+        | (while IFS= read -r line; do process "$line"; done)
+}
+
+main ()
+{
+    # External: $logfile, $read_sleep
+    
+    # Pipe only new lines in the logfile to the scanning function.
+    n_lines=0
+    while true; do
+        new_n_lines=$(wc -l <$logfile)
+        if [ $new_n_lines -lt $n_lines ]; then
+            n_lines=0 # Log rotation detected.
+        fi
+        if [ $new_n_lines -gt $n_lines ]; then
+            tail -n $(($new_n_lines - $n_lines)) $logfile | scan
+            n_lines=$new_n_lines
+        fi
+        sleep $read_sleep
+    done
+}
+
+main
