@@ -1,6 +1,0 @@
-% Abuse contact for '195.22.124.0 - 195.22.127.255' is 'abuse@euronet.net.pl'
-abuse-c:        AR26792-RIPE
-descr:          abuse-mail: info@nccpartners.eu
-
-Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
-[23/Mar/2017:13:55:54 +0200] 195.22.126.221 301 "GET /Struts2XMLHelloWorld/User/home.action:linux HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

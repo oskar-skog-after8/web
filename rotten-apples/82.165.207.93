@@ -1,9 +1,0 @@
-% Abuse contact for '82.165.200.0 - 82.165.207.255' is 'abuse@oneandone.net'
-remarks:        in case of abuse or spam, please mailto: abuse@oneandone.net
-abuse-c:        ABDE2-RIPE
-abuse-mailbox:  abuse@oneandone.net
-abuse-mailbox:  abuse@oneandone.net
-
-Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
-[24/Mar/2017:07:18:33 +0200] 82.165.207.93 301 "GET /notFound.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
-[24/Mar/2017:07:18:33 +0200] 82.165.207.93 301 "GET /login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

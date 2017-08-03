@@ -1,6 +1,0 @@
-% Abuse contact for '83.246.109.96 - 83.246.109.127' is 'abuse@hostway.de'
-abuse-mailbox:  abuse@hostway.de
-
-Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
-[23/Mar/2017:18:19:43 +0200] 83.246.109.98 301 "GET /notFound.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
-[23/Mar/2017:18:19:43 +0200] 83.246.109.98 301 "GET /login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

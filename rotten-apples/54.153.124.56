@@ -1,9 +1,0 @@
-Comment:        All abuse reports MUST include:
-Comment:        * Your contact details (phone and email) Without these we will be unable to identify the correct owner of the IP address at that point in time.
-OrgNOCEmail:  amzn-noc-contact@amazon.com
-OrgTechEmail:  amzn-noc-contact@amazon.com
-OrgAbuseEmail:  abuse@amazonaws.com
-
-Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
-[24/Mar/2017:05:12:22 +0200] 54.153.124.56 301 "GET /frame/first.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
-[24/Mar/2017:05:12:23 +0200] 54.153.124.56 301 "GET /struts2-showcase/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"

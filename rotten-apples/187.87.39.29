@@ -1,8 +1,0 @@
-abuse-c:     DAB
-% Security and mail abuse issues should also be addressed to
-% and mail-abuse@cert.br
-% provider, contact handle (ID), CIDR block, IP and ASN.
-
-Time IP Status "Request-line" "Referer" "User-Agent" DNT "Host:server-port"
-[24/Mar/2017:19:54:54 +0200] 187.87.39.29 301 "GET /frame/first.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
-[24/Mar/2017:19:54:56 +0200] 187.87.39.29 301 "GET /struts2-showcase/login.action HTTP/1.1" "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" - "62.72.235.216:80"
